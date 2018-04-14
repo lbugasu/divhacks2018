@@ -1,0 +1,3 @@
+With a threshold of 30% gives:
+0% - easily identifiable digits
+0% - ohardly identifiable digits
