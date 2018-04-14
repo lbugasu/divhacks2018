@@ -1,10 +1,29 @@
+
 package divhacks2018;
 
 import java.io.*;
 import java.util.*;
 
+/**
+ * This is my application for analyzing a dataset of MNIST
+ * @author Laurence Ininda
+ *
+ */
 public class App {
 	public static void main (String[]args) {
+
+	}
+	
+	/**
+	 * This method analyzes the test data set using a given threshold value by the user
+	 * @param threshold - A given threshold to determine which digits are "EASY" versus which values are "HARD"
+	 * 
+	 */
+	public void analyzeTestData(int threshold) {
+		
+		/*
+		 * First Analyze the sample dataset for thresholds of above 50%, 60%, 70%, 80% and report the results in a txt file
+		 */
 		String fname = "MNIST_test.csv";
 		File file = new File(fname);
 		
@@ -31,18 +50,15 @@ public class App {
 						id = Integer.parseInt(s[i]);
 						}
 				}
-
 			}
-			
-			
 		}
 		catch(FileNotFoundException c){
 			System.out.println("File Not found!!");
 		} 
 		
 		catch (IOException e) {
-			
-			System.out.println("File Not found!!");
+			e.printStackTrace();
 		}
 	}
 }
+
