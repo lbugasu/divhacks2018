@@ -1,8 +1,9 @@
 
 package divhacks2018;
-
+import static java.lang.Math.min;
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * This is my application for analyzing a dataset of MNIST
@@ -23,6 +24,7 @@ public class App {
 
 		System.out.println("\n\nTraining Accuracy with selected Threshold:");
 		analyzeData(trainSet, threshold);
+		
 	}
 	
 	/**
@@ -57,17 +59,21 @@ public class App {
 			String line = in.nextLine();
 			String [] s = line.split(",");
 			int value = 0;
+			ArrayList <Integer> labels = new ArrayList();
+			//The first index contains the label of the MNIST value
+			int id = Integer.parseInt(s[0]);
 			
-			for (int i = 0; i<s.length;i++) {
-				int id = 0;
+			//See how predictable the digit is by analyzing how the digit performs against the 21 Algorithms
+			for (int i = 1; i<s.length;i++) {
+				int read = 0;
 				if (i>0) {
 					value += Integer.parseInt(s[i]);
 					}//Add the predictions of the current digit
 				else {
-					id = Integer.parseInt(s[i]);
+					read = Integer.parseInt(s[i]);
 					}
 			}
-			//If digit is above threshold
+			//If digit is above threshold 
 			if ((value/21)*100>threshold) {
 				countEASY++;
 			}
