@@ -9,4 +9,4 @@ In order to try a range of threshold values, the program will ask you whether yo
 
 Once you have tuned your threshold value, you can select the option to analyze the training dataset using your selected threshold
 
-The program will output all your results from trials of different threshold values and the final resulta from the training data to a text file
+The program will output all your results from trials of different threshold values and the final resulta from the training data to a text file called "results.txt"
