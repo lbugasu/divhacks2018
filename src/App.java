@@ -1,4 +1,4 @@
-package divhacks2018;
+
 
 import java.util.*;
 import java.lang.String;
@@ -28,7 +28,7 @@ public class App{
 		String trainSet = "MNIST_train.csv";
 		
 		System.out.println("Testing Accuracy with selected Threshold:");
-		analyzeData(testSet, threshold, results);
+		analyzeData(trainSet, threshold, results);
 
 		//System.out.println("\n\nTraining Accuracy with selected Threshold:");
 		//analyzeData(trainSet, threshold, results);
