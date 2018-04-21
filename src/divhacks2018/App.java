@@ -126,8 +126,8 @@ public class App{
 			if(predictionvalue<threshold) {
 				classification = "HARD";
 			}
-			System.out.printf("%-7d%-22d%-22d%-12f%-15s\n", i, results[i][0], results[i][1], predictionvalue,classification);
-			w.printf("%-7d%-22d%-22d%-12f%-15s\n", i, results[i][0], results[i][1], predictionvalue,classification);
+			System.out.printf("%-7d%-22d%-22d%-12.2f%-15s\n", i, results[i][0], results[i][1], predictionvalue,classification);
+			w.printf("%-7d%-22d%-22d%-12.2f%-15s\n", i, results[i][0], results[i][1], predictionvalue,classification);
 			}
 		}
 	}

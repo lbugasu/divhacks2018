@@ -1,41 +1,27 @@
 With a threshold of 80.00% here are the results:
 Digit  Correct Predictions   False predictions     Percentage  Classification 
-0      906                   74                    92.448980   EASY           
-1      1090                  45                    96.035242   EASY           
-2      779                   253                   75.484496   HARD           
-3      812                   198                   80.396040   EASY           
-4      805                   177                   81.975560   EASY           
-5      643                   249                   72.085202   HARD           
-6      811                   147                   84.655532   EASY           
-7      873                   155                   84.922179   EASY           
-8      684                   290                   70.225873   HARD           
-9      787                   222                   77.998018   HARD           
-
-Testing with a threshold of 79.00
-With a threshold of 79.00% here are the results:
-Digit  Correct Predictions   False predictions     Percentage  Classification 
-0      906                   74                    92.448980   EASY           
-1      1090                  45                    96.035242   EASY           
-2      779                   253                   75.484496   HARD           
-3      812                   198                   80.396040   EASY           
-4      805                   177                   81.975560   EASY           
-5      643                   249                   72.085202   HARD           
-6      811                   147                   84.655532   EASY           
-7      873                   155                   84.922179   EASY           
-8      684                   290                   70.225873   HARD           
-9      787                   222                   77.998018   HARD           
+0      906                   74                    92.45       EASY           
+1      1090                  45                    96.04       EASY           
+2      779                   253                   75.48       HARD           
+3      812                   198                   80.40       EASY           
+4      805                   177                   81.98       EASY           
+5      643                   249                   72.09       HARD           
+6      811                   147                   84.66       EASY           
+7      873                   155                   84.92       EASY           
+8      684                   290                   70.23       HARD           
+9      787                   222                   78.00       HARD           
 
 
 Applying Binary Classifier to training dataset
-With a threshold of 79.00% here are the results:
+With a threshold of 80.00% here are the results:
 Digit  Correct Predictions   False predictions     Percentage  Classification 
-0      5724                  199                   96.640216   EASY           
-1      6538                  204                   96.974192   EASY           
-2      5142                  816                   86.304129   EASY           
-3      5372                  759                   87.620290   EASY           
-4      5171                  671                   88.514207   EASY           
-5      4399                  1022                  81.147390   EASY           
-6      5552                  366                   93.815478   EASY           
-7      5785                  480                   92.338388   EASY           
-8      4611                  1240                  78.807042   HARD           
-9      5071                  878                   85.241217   EASY           
+0      5724                  199                   96.64       EASY           
+1      6538                  204                   96.97       EASY           
+2      5142                  816                   86.30       EASY           
+3      5372                  759                   87.62       EASY           
+4      5171                  671                   88.51       EASY           
+5      4399                  1022                  81.15       EASY           
+6      5552                  366                   93.82       EASY           
+7      5785                  480                   92.34       EASY           
+8      4611                  1240                  78.81       HARD           
+9      5071                  878                   85.24       EASY           
